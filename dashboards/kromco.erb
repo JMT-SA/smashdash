@@ -1,0 +1,38 @@
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.load("visualization", "1", {packages:["gauge"]});
+    </script>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cs_one" data-title="Coldstore 1" data-view="Number"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cs_gauge_1" data-view="GoogleGauge"  data-title="CS 1 temp" data-green_from="-2" data-green_to="4" data-yellow_from="4" data-yellow_to="10" data-red_from="10" data-red_to="20" data-min="-6" data-max="20"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cs_temps" data-view="List" data-unordered="true" data-title="Coldstore temperatures" data-moreinfo="in deg C"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="line_1" data-view="List" data-unordered="true" data-moreinfo="For <%= Date.today %>"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="line_41" data-view="List" data-unordered="true" data-moreinfo="For <%= Date.today %>"></div>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="line_3" data-view="List" data-unordered="true" data-moreinfo="For <%= Date.today %>"></div>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="line_42" data-view="List" data-unordered="true" data-moreinfo="For <%= Date.today %>"></div>
+
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+          <div data-id="cs_plot_1" data-view="Sparkline" data-title="CS 1" data-moreinfo="Temp change per hour" data-graphtype="lineplot" data-suffix=" deg C"></div>
+        </li>
+    </li>
+  </ul>
+</div>
